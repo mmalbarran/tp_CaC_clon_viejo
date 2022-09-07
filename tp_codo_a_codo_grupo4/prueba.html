@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample formularios</title>
+</head>
+<body>
+
+    <header> <h1>HOLA VAMOS A HACER NUESTRO FORM</h1></header>
+    
+    <main>
+
+        <form action="LINK" method="POST">
+            
+            <div class="cuerpo_form">
+                <fieldset>
+                    <legend>NOMBRE Y APELLIDOS</legend>
+
+                    <label>nombre
+                        <input type="text" name="nombre">
+                    </label>
+                    <label>apellido
+                        <input type="text" name="apellido" required placeholder="ingresa tu apellido!!!!!">
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>COLOCAR FECHAS Y GASEOSAS</legend>
+                    <label for="dias">
+                        DIAS <input type="date" name="fecha" id="date">
+                    </label>
+                    
+                    <br>
+                    <label>
+                        marca de gasesas:
+                        <input list="gaseosas" name="gaseosas">
+                        <datalist id="gaseosas">
+                            <option value="COCA COLA">coca light</option>
+                            <option value="MANAOS"></option>
+                            <option value="PEPSI">v
+                        </datalist>
+                    
+                    </label>
+                    
+                    <div>
+                        <br>
+                        <label> LISTA DE PATOS: </label>
+                            <select name="patos">
+                                <option value="pato1">PATAZO</option>
+                                <option value="pato2">DONALD</option>
+                            </select>
+                    </div>
+
+
+                </fieldset>
+
+            </div>
+            <div class="ejecutador_form">
+                <input type="submit" value="ENVIAR">
+            </div>
+        </form>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
